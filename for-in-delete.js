@@ -102,7 +102,7 @@ function double(obj){
 function secrets(obj){
 let string = "";
 for(let prop in obj){
-  if(prop.includes('sh')){
+  if(prop.startsWith('sh')){
     string +=obj[prop]
   }
 }
